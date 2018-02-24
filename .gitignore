@@ -1,3 +1,23 @@
+build/*
+!build/readme.md
+design/
+src/blocks/sprite-svg/img/sprite-svg.svg
+src/blocks/sprite-png/img
+src/blocks/sprite-png/sprite-png.scss
+
+.Saved/
+_arc/
+.vscode/
+.DS_Store
+*.sublime-*
+*.rar
+*.zip
+.idea
+.publish
+ex_files
+Thumbs.db
+__MACOSX/
+
 # Logs
 logs
 *.log
@@ -56,4 +76,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
