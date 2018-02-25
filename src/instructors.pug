@@ -1,0 +1,14 @@
+//- шаблон наследования
+extends templates/layout.pug
+
+block meta
+  title Инструкторы
+
+  //- Подключение шапки
+  +page-header()
+    block nav
+      -var selected = 'instructors.html';
+      +main-nav(selected)
+
+  h1.page__title
+  +instructors()

@@ -1,6 +1,50 @@
-mixin services(title, content, date)
-  div.services
-    h2.services__title= title
-    p.services__content= content
-    footer.services__footer
-      time.services__time= date
+mixin services()
+  section.services
+    h2.services__title Наши услуги
+    p.services__description Для взрослых и детей 6+ / любого уровня подготовки
+
+    //- services-item
+    .services-item
+      img.services-item__photo(src='img/services-item__photo1.jpg')
+
+    .services-item
+      img.services-item__photo(src='img/services-item__photo2.jpg')
+
+    article.services-item
+      h3.services-item__title Краткий курс
+      p.services-item__text.
+        Экспресс курс рассчитан на тех, кто хочет
+        повысить свой уровень в короткий срок,
+        узнать новые техники катания и получить
+        лайфхаки “как кататься как чемпион”
+        от опытных инструкторов, подходит как
+        для новичков, так и более опытных
+      span.services-item__info 5 занятий
+      a.services-item__link
+        //- img.services-item__link-img(src='img/sprite-08193894582178565.png')
+
+    article.services-item
+      h3.services-item__title Разовое посещение
+      p.services-item__text.
+        Впервые здесь? Тогда эта возможность точно для вас. Приходите на разовое занятие
+        и проникнетесь атмосферой школы, познакомитесь с инструкторами и узнаете
+        о том, как проходит обучение. После занятия мы определим ваш уровень и прикинем план занятий
+      span.services-item__info 3 часа
+      a.services-item__link
+        //- img.services-item__link-img(src='img/sprite-08193894582178565.png')
+
+    .services-item
+      img.services-item__photo(src='img/services-item__photo3.jpg')
+
+    article.services-item
+      h3.services-item__title Полный курс
+      p.services-item__text.
+        Продвинутый курс для самых вдохновленных
+        горными лыжами и сноубордом, здесь вы
+        не только улучшите свою технику, но
+        и получите много дополнительных обучающих
+        материалов и видео-уроков от участников
+        мировых чемпионатов, здесь вы узнаете все
+      span.services-item__info 10 занятий
+      a.services-item__link
+        //- img.services-item__link-img(src='img/sprite-08193894582178565.png')

@@ -1,3 +1,12 @@
 mixin page-header()
-  div
-    p ХЕДЕР!!!
+
+  header.header.page__header
+    div.logo
+      img(src='img/logo.png' class='logo__img')
+
+    block nav
+
+    .header__contacts
+      a.header__phone(href='tel:+78008008080', title='8 (800) 800-80-80') 8 (800) 800-80-80
+
+    a.header__btn.btn(href='/schedule.html', title='Записаться') Записаться

@@ -1,15 +1,9 @@
 mixin main-nav(selected)
 
-  -
-    var menu = {
-      'Расписание': '/index.html',
-      'Инструкторы': '/blog.html',
-      'Стоимость': '/contacts.html',
-      'Как добраться': '/service.html'
-    };
+  - var menu = {'Расписание': 'schedule.html', 'Инструкторы': 'instructors.html', 'Стоимость': '#', 'Как добраться': '#'};
 
   nav.main-nav
     ul.main-nav__list
       each val, key in menu
-        li(class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item  main-nav__item--active' : 'main-nav__item')
-          a(href=val, title=key)= key
+        li(class= selected.toLowerCase() === val.toLowerCase() ? 'main-nav__item  main-nav__item--current' : 'main-nav__item')
+          a.main-nav__link(href=val, title=key)= key

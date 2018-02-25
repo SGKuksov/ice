@@ -1,6 +1,19 @@
-mixin sale(title, content, date)
-  div.sale
-    h2.sale__title= title
-    p.sale__content= content
-    footer.sale__footer
-      time.sale__time= date
+mixin sale()
+  section.sale
+    h2.sale__title Скидки на абонементы
+
+    //- sale-item
+    article.sale-item
+      h3.sale-item__title Пробуй
+      p.sale-item__text Дарим скидку <span>5%</span> новичкам, прошедшим разовое занятие
+
+    article.sale-item
+      h3.sale-item__title Катайся вместе
+      p.sale-item__text Получи скидку <span>10%</span>, если друг записался по твоей рекомендации
+
+    article.sale-item
+      h3.sale-item__title Учись всей семьей
+      p.sale-item__text Покупай абонемент для себя и получи скидку <span>15%</span> для ребенка
+
+    //- btn
+    a.sale__btn.btn(href='/schedule.html', title='Записаться') Записаться

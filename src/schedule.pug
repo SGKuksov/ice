@@ -1,0 +1,11 @@
+//- шаблон наследования
+extends templates/layout.pug
+
+block meta
+  title Расписание
+
+  //- Подключение шапки
+  +page-header()
+    block nav
+      -var selected = 'schedule.html';
+      +main-nav(selected)

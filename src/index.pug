@@ -1,19 +1,24 @@
-extends templates/layout-home.pug
+//- шаблон наследования
+extends templates/layout.pug
 
 block meta
-  title Home
-  meta(name='description', content='Home page!')
+  title Школа сноуборда и горных лыж
 
-block append head
-  link(rel="stylesheet", href="some.css")
-  script(src='some.js')
+  //- promo
+  +promo()
 
-block nav
-  -var selected = 'blog';
-  +main-nav(selected)
+  //- Подключение шапки
+  +page-header()
+    block nav
+      -var selected = "index.html"
+      +main-nav(selected)
 
-block content
-  +page-content()
+  +services()
+  +features()
+  +sale()
+  +team()
+  +community()
+  +gallery()
 
-//- block append page-bottom
-//-   script(src='some.js')
+  //- Подключение подвала
+  +page-footer()

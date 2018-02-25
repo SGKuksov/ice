@@ -1,3 +1,21 @@
 mixin page-footer()
-  div
-    p ФУТЕР!!!
+
+  footer.footer.page__footer
+    div.logo
+      img(src='img/logo.png' class='logo__img')
+
+    - var menu = {'youtube': '/shedules.html', 'instagram': '/instructors.html', 'facebook': '#', 'vkontakte': '#'};
+
+    nav.main-nav
+      ul.main-nav__list
+        each val, key in menu
+          li.main-nav__item
+            a.main-nav__link(href=val, title=key)= key
+
+    .footer__contacts
+      a.footer__phone(href='tel:+78008008080', title='8 (800) 800-80-80') 8 (800) 800-80-80
+      a.footer__email(href='emailto:hello@iceace.com', title='hello@iceace.com') hello@iceace.com
+
+    cite.footer__copy © 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены
+
+    block nav

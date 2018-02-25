@@ -92,7 +92,7 @@ gulp.task('style', function () {
 gulp.task('pug', function() {
   return gulp.src([
       dirs.source + '/*.pug',
-      '!' + dirs.source + '/mixins.pug',
+      '!' + dirs.source + '/_mixins.pug',
     ])
     .pipe(plumber({
       errorHandler: function(err) {

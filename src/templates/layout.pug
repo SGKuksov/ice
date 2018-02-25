@@ -1,34 +1,28 @@
-include ../mixins.pug
+//- Подключение примесей
+include ../_mixins.pug
 
+//- doctype
 doctype html
 html(class="no-js  page", lang="ru")
-
+  //- head и метатеги
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
+    //- Title
     block meta
       title Home
 
+    //- Стилей
     block head
       link(rel="stylesheet", href="css/style.css")
       link(rel="shortcut icon", href="/img/favicon.ico", type="image/x-icon")
       script.
         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
-  body
-    .page__inner
-      .page__content
+  //- body
+  body.page
 
-        +page-header()
-        div
-          block nav
-
-        block content
-
-      .page__footer-wrapper
-        div
-        +page-footer()
-
+    //- Подключение скриптов
     block page-bottom
       script(src="js/script.min.js")
