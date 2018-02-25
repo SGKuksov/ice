@@ -10,5 +10,41 @@ block meta
       -var selected = 'instructors.html';
       +main-nav(selected)
 
-  h1.page__title
-  +instructors()
+  h1.page__title Инструкторы школы
+  form(
+    name= 'search',
+    method= 'post',
+    action= 'input1.php'
+  )
+    input(
+      type= 'search',
+      name= 'search',
+      placeholder= 'Начните вводить имя'
+    )
+    input(
+      type="submit",
+      value="Искать"
+    )
+    -
+      var instructors = {
+        'Арсений Петров': 'img/instructors-tabs__photo1.jpg',
+        'Иван Петров': 'img/instructors-tabs__photo2.jpg',
+        'Степан Александров': 'img/instructors-tabs__photo3.jpg',
+        'Константин Константинопольский': 'img/instructors-tabs__photo4.jpg',
+        'Виталий Сергеев': 'img/instructors-tabs__photo5.jpg'
+      };
+
+  +instructors-tabs(val, key)
+
+  -
+    var instructors = {
+      'Иван Артемов': 'img/instructors-tabs__photo6.jpg',
+      'Иван Петров': 'img/instructors-tabs__photo7.jpg',
+      'Андрей Степанов': 'img/instructors-tabs__photo8.jpg',
+      'Данила Алексеев': 'img/instructors-tabs__photo9.jpg',
+      'Дмитрий Егоров': 'img/instructors-tabs__photo10.jpg'
+    };
+  +instructors-tabs(val, key)
+
+  //- Подключение подвала
+  +page-footer()

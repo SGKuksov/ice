@@ -1,0 +1,7 @@
+mixin instructors-tabs(val, key)
+
+  div.instructors-tabs
+    each val, key in instructors
+      div.instructors-tabs__item
+        img.instructors-tabs__photo(src=val, title=key)
+        span.instructors-tabs__caption=key
