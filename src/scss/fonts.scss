@@ -1,2 +1,29 @@
-// Подключение своих шрифтов.
-// Не пишите тут ничего, кроме @font-face
+// @font-face {
+//   font-family: <family-name>;
+//   src: url('webfont.eot');                          /* IE9 Compat Modes */
+//   src: url('webfont.eot?#iefix') format("eot"),     /* IE6-IE8 */
+//     url('webfont.woff2') format('woff2'),           /* Новейшие браузеры */
+//     url('webfont.woff') format('woff'),             /* Новые браузеры и IE9+ */
+//     url('webfont.ttf') format('truetype'),          /* Старые Safari, Android, iOS */
+//     url('webfont.svg') format('svg');
+//   font-weight: <weight>;
+//   font-style: <style>;
+// }
+
+@font-face {
+  font-family: "FuturaPT";
+  src: url('../fonts/FUTURABOLD.woff2') format('woff2'),           /* Новейшие браузеры */
+    url('../fonts/FUTURABOLD.woff') format('woff'),             /* Новые браузеры и IE9+ */
+    url('../fonts/FUTURABOLD.ttf') format('truetype');          /* Старые Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FUTURA;
+  src: url('../fonts/FUTURABOLD.woff2') format('woff2'),           /* Новейшие браузеры */
+    url('../fonts/FUTURABOLD.woff') format('woff'),             /* Новые браузеры и IE9+ */
+    url('../fonts/FUTURABOLD.ttf') format('truetype');          /* Старые Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}

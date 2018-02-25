@@ -1,12 +1,13 @@
-$gray-dark:                   hsl(0, 0%, 20%);
-$gray:                        hsl(0, 0%, 50%);
-$gray-light:                  hsl(0, 0%, 80%);
+$font-family:                 'FuturaPT', sans-serif;
 
-$text-color:                  $gray-dark;
+$text-color:                  #111111;
+$font-size:                   15px;
+$line-height:                 1.5;
 
-$font-family:                 'Open Sans_my', sans-serif;
-$font-size:                   14px;
-$line-height:                 1.4;
+$black:                       #000000;
+$btn-green:                   #74e196;
+$text-green:                  #83eba5;
+$menu-underline:              #6de793;
 
 $screen-xs:                   480px;
 $screen-sm:                   768px;

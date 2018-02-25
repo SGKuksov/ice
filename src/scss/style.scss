@@ -1,19 +1,26 @@
 // Это диспетчер подключений, тут не должно быть ничего, кроме импортов
 
 // Глобальные подключения
-@import '_reboot.scss';
+@import 'reboot.scss';
+@import 'bootstrap-grid.scss';
 @import 'variables.scss';
 @import 'fonts.scss';
+@import 'global.scss';
 
 // Растровый спрайт: примеси-генераторы правил
 @import './src/blocks/sprite-png/sprite-png.scss';
 @include sprites($spritesheet-sprites); // Генератор селекторов для всех картинок спрайта
 
 // БЭМ-блоки. Один БЭМ-блок = 1 файл. ВСЕГДА.
-@import './src/blocks/page/page.scss';
-@import './src/blocks/main-nav/main-nav.scss';
+@import './src/blocks/_comments/comments.scss';
+@import './src/blocks/_community/community.scss';
+@import './src/blocks/_instructors/instructors.scss';
+@import './src/blocks/_instructors/instructors.scss';
+@import './src/blocks/_main-nav/main-nav.scss';
+@import './src/blocks/_profile/profile.scss';
+@import './src/blocks/_promo/promo.scss';
+@import './src/blocks/_sale/sale.scss';
+@import './src/blocks/_services/services.scss';
+@import './src/blocks/_team/team.scss';
 @import './src/blocks/page-header/page-header.scss';
 @import './src/blocks/page-footer/page-footer.scss';
-@import './src/blocks/page-content/page-content.scss';
-@import './src/blocks/promo/promo.scss';
-@import './src/blocks/new/new.scss';

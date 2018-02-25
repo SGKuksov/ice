@@ -1,0 +1,20 @@
+html {
+  font-size:     $font-size;
+  font-family:   $font-family;
+  color:         $text-color;
+  line-height:   $line-height;
+}
+
+a {
+  font-size:       $font-size;
+  font-family:     $font-family;
+  color:           $text-color;
+  line-height:     $line-height;
+	text-transform:  uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color:           $text-color;
+    text-decoration: none;
+  }
+}
