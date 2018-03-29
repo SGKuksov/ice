@@ -1,0 +1,151 @@
+/* sale */
+.sale {
+
+  background-image: url("../img/sale__bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 300px;
+  padding-top: 10px;
+
+  @media (min-width: $screen-sm) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  &__container {
+    text-align: center;
+    width: 290px;
+    margin: 0 auto;
+
+    @media (min-width: $screen-sm) {
+      width: 740px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1160px;
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      font-size: 40px;
+    }
+  }
+
+  &__item1 {
+    padding: 0 20px;
+
+    @media (min-width: $screen-sm) {
+      width: 33%;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      padding: 0 40px;
+      margin: auto;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  &__item2 {
+    display: none;
+    padding: 0 20px;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      width: 33%;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      width: 33.33%;
+      padding: 0 40px;
+      margin: auto;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  &__item3 {
+    display: none;
+    padding: 0 20px;
+    @media (min-width: $screen-sm) {
+      display: block;
+      width: 33%;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      width: 33.33%;
+      padding: 0 40px;
+      margin: auto;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  &__text {
+    display: block;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #fff;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: $screen-sm) {
+      padding: 0;
+    }
+  }
+
+  &__text span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #74e196;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  }
+
+  &__btn {
+
+    &--white {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #74e196;
+    line-height: 20px;
+    padding: 12px 10px;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+    }
+  }
+}
+

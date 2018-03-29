@@ -1,0 +1,71 @@
+.team {
+
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+      font-size: 40px;
+      color: #000;
+    }
+  }
+
+  &__container {
+    text-align: center;
+    background-image: url("../img/team__photo.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 370px;
+    padding-top: 310px;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      padding-top: 520px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      font-family: PT Sans, sans;
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 700;
+      padding: 0 45px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 50px;
+      padding: 0 240px;
+      text-align: center;
+      font-family: PT Sans, sans;
+      font-weight: 700;
+      font-size: 15px;
+      color: #000;
+      line-height: 22px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #74e196;
+    line-height: 20px;
+    padding: 12px 10px;
+    text-transform: uppercase;
+    border: 2px solid #000;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.nav {
+
+  @media (min-width: $screen-lg) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 84px;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      padding-top: 0;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid $green;
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      margin-left: 40px;
+      border-bottom: none;
+      width: auto;
+    }
+
+    &--current{
+
+      @media (min-width: $screen-lg) {
+        position: relative;
+      }
+
+      &:after{
+
+        @media (min-width: $screen-lg) {
+          content: '';
+          border-bottom: 3px solid $green;
+          position: absolute;
+          width: 100%;
+          display: inline-block;
+          bottom: 5px;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+    }
+  }
+}

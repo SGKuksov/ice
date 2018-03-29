@@ -1,0 +1,112 @@
+.promo {
+  background-image: url('../img/promo__bg.jpg');
+  background-color: #000;
+  background-size: cover;
+  background-position: -400px bottom;
+  background-repeat: no-repeat;
+  height: 480px;
+  position: relative;
+
+  @media (min-width: $screen-sm) {
+     background-position: center bottom;
+     height: 415px;
+  }
+
+  &__menu-icon{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    background-position: center bottom;
+    padding-bottom: 320px;
+    padding-top: 100px;
+    height: 640px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 24px;
+    padding-top: 125px;
+
+    @media (min-width: $screen-sm) {
+      padding-top: 112px;
+      padding-right: 74px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 50px;
+      line-height: 1;
+    }
+  }
+
+  &__title span {
+    font-size: 18px;
+    display: block;
+
+    @media (min-width: $screen-lg) {
+      font-size: 38px;
+      margin-top: 20px;
+    }
+  }
+
+  &__btn-container{
+    position: absolute;
+    width: 100%;
+    bottom: 67px;
+    display:flex;
+    justify-content: center;
+
+    @media (min-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &__btn{
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    line-height: 20px;
+    padding: 12px 10px;
+    text-transform: uppercase;
+    border: 2px solid $green;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__container {
+    width: 290px;
+    margin: 0 auto;
+    
+    @media (min-width: $screen-sm) {
+      width: 738px;
+      padding-left: 75px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1160px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+

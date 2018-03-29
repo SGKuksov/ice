@@ -1,0 +1,46 @@
+.gallery {
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+
+  &__title{
+    text-align: center;
+  }
+
+  &__title a {
+
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+
+    @media (min-width: $screen-lg) {
+      font-size: 40px;
+      font-weight: 700;
+      color: #000;
+    }
+  }
+
+  &__miniature {
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      font-size: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__slide {
+
+    &--small {
+      display: block;
+
+      @media (min-width: $screen-lg) {
+        margin-left: 7px;
+        margin-right: 8px;
+      }
+    }
+  }
+}

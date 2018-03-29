@@ -1,0 +1,47 @@
+/*global*/
+html {
+  box-sizing: border-box;
+  color: #000;
+  font-family: $font-family;
+  font-size: 15px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  display: inline-block;
+}
+
+.card__conteiner,
+.community__container,
+.container,
+.feature__container,
+.feedback__container,
+.footer__container,
+.footer__container--second,
+.instructor,
+.maine__container,
+.gallery__container,
+.header__container,
+.program__container,
+.sale__container,
+.team__container {
+  width: 100%;
+
+  @media (min-width: $screen-lg) {
+    width: 1160px;
+    margin: 0 auto;
+  }
+}

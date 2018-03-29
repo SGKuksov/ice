@@ -1,0 +1,72 @@
+.main__inner{
+  margin: 0 auto;
+  width: 100%;
+   @media (min-width: $screen-lg) {
+      width: 1040px;
+    }
+}
+
+.comment {
+  &__title {
+    text-align: center;
+
+    @media (min-width: $screen-lg) {
+    display: none;
+    }
+  }
+
+  &__container {
+    position: relative;
+    background-image: url('../img/comment-background--mob.png');
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: centre bottom;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-sm) {
+      background-image: url('../img/comment-background--tablet.png');
+      background-position: 0px center;
+      width: 100%;
+    }
+    @media (min-width: $screen-lg) {
+      background-image: url('../img/comment-background.jpg');
+      background-position: 0px center;
+      width: 1040px;
+      margin-bottom: 66px;
+    }
+  }
+
+  &__link-vk {
+
+    width: 28px;
+    height: 16px;
+    background: url('../img/css_sprites.png') -231px -186px;
+    opacity: .8;
+
+    padding-top: 10px;
+    }
+
+
+  &__subtitle {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  &__text {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 70px;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    @media (min-width: $screen-sm) {
+       padding-right: 200px;
+    }
+     @media (min-width: $screen-lg) {
+       padding-right: 240px;
+       font-size: 15px;
+       line-height: 20px;
+    }
+  }
+}

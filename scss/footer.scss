@@ -1,0 +1,223 @@
+.footer {
+  padding-bottom: 20px;
+  background-image: url("../img/footer__bg--mob.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media (min-width: $screen-sm) {
+    background-image: url("../img/footer__bg--tablet.png");
+    background-position: center top;
+  }
+
+  @media (min-width: $screen-lg) {
+    background-size: cover;
+    background-image: url("../img/footer__bg.jpg");
+    background-color: #000;
+    padding-top: 58px;
+    padding-bottom: 106px;
+  }
+
+  &__container {
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__copy {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+
+    @media (min-width: $screen-lg) {
+      font-family: Futura PT, sans;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: left;
+    }
+  }
+}
+
+.logo {
+   width: 63px;
+
+  @media (min-width: $screen-lg) {
+    width: 160px;
+  }
+}
+
+.social {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0 90px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $screen-sm) {
+    padding: 0 300px;
+    margin-bottom: 30px;
+  }
+
+  &__link-ytb {
+    width: 20px;
+    height: 20px;
+    background: url('../img/css_sprites-mob.png') -85px -155px;
+
+    @media (min-width: $screen-lg) {
+      margin-right: 20px;
+      width: 32px;
+      height: 32px;
+      background: url("../img/css_sprites.png") -62px -186px;
+    }
+  }
+
+  &__link-inst {
+    width: 20px;
+    height: 20px;
+    background: url('../img/css_sprites-mob.png') -45px -155px;
+
+    @media (min-width: $screen-lg) {
+      margin-right: 20px;
+      width: 32px;
+      height: 32px;
+      background: url("../img/css_sprites.png") -10px -186px;
+    }
+  }
+
+  &__link-fb {
+    width: 10px;
+    height: 21px;
+    background: url('../img/css_sprites-mob.png') -209px -10px;
+
+    @media (min-width: $screen-lg) {
+      margin-right: 20px;
+      width: 18px;
+      height: 33px;
+      background: url("../img/css_sprites.png") -269px -101px;
+    }
+  }
+
+  &__link-vk {
+    width: 25px;
+    height: 15px;
+    background: url('../img/css_sprites-mob.png') -125px -155px;
+
+    @media (min-width: $screen-lg) {
+      margin-top: 5px;
+      margin-right: 20px;
+      width: 40px;
+      height: 24px;
+      background: url("../img/css_sprites.png") -171px -186px;
+    }
+  }
+}
+
+.contact {
+   text-align: center;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
+
+  &__link {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  &__mail {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    margin-top: 5px;
+
+    @media (min-width: $screen-lg) {
+      font-size: 22px;
+    }
+  }
+}
+
+.nav-footer {
+  display: none;
+
+  @media (min-width: $screen-lg) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 84px;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      padding-top: 0;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid $green;
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      margin-left: 40px;
+      border-bottom: none;
+      width: auto;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+    }
+  }
+}
+

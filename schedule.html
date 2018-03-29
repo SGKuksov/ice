@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Schedule</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<a href="index.html" class="logo1">
+		<img src="img/logo--black.png" alt="logo" class="logo__img">
+	</a>
+	<div class="menu-icon promo__menu-icon"> 
+		<div class="line-1--black line-1 no-animation"></div>
+		<div class="line-2--black line-2 no-animation"></div>
+		<div class="line-3--black line-3 no-animation"></div>
+	</div>
+	<header class="header">
+		<div class="header__container">
+			<a href="index.html" class="logo1">
+				<img src="img/menu-logo.png" alt="logo" class="logo__img">
+			</a>
+			<a href="index.html" class="logo2">
+				<img src="img/logo__img.png" alt="logo" class="logo__img">
+			</a>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">	
+						<a href="schedule.html" class="nav__link">Расписание</a>
+					</li>
+					<li class="nav__item nav__item--current">	
+						<a href="instructors.html" class="nav__link">Инструкторы</a>
+					</li>
+					<li class="nav__item">	
+						<a href="schedule.html" class="nav__link">Стоимость</a>
+					</li>
+					<li class="nav__item">	
+						<a href="index.html#map" class="nav__link">Как добраться</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__social social social--mobile">	
+				<a href="#"><i class="social__link-ytb--mobile"></i></a>
+				<a href="#"><i class="social__link-inst--mobile"></i></a>
+				<a href="#"><i class="social__link-fb--mobile"></i></a>
+				<a href="#"><i class="social__link-vk--mobile"></i></a>
+			</div>
+			<div class="header__contacts contacts">	
+				<a href="tel:+78008008080" class="contacts__link">8 (800) 800-80-80</a>
+				<a class="contacts__mail contacts__mail--desktop" href="mailto:hello@ice-ace.com">Hello@ice-ace.com</a>
+				<a href="schedule.html" class="btn header__btn">Записаться</a>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="program">
+			<div class="program__container">
+				<h1 class="program__title">Выбрать программу</h1>
+				<div class="program__inner">
+					<form class="program__form-schedule form-schedule">
+						<p class="form-schedule__wrap">
+							<label class="form-schedule__label">Спорт</label>
+							<br>
+							<select class="form-schedule__item" placeholder="Выберите вид спорта" name="sport">
+								<option value="sport-item">Выберите вид спорта</option>
+								<option value="sport-item2">Лыжи</option>
+								<option value="sport-item3">Сноуборд</option>
+							</select>
+						</p>
+						<p class="form-schedule__wrap">
+							<label class="form-schedule__label">Инструкторы</label>
+							<br>
+							<select class="form-schedule__item" placeholder="Выберите инструктора" selected="selected" name="sport">
+								<option value="instructor1">Константин Константинопольский</option>
+								<option value="instructor2">Степан Александров</option>
+								<option value="instructor3">Виталий Сергеев</option>
+								<option value="instructor4">Арсений Петров</option>
+							</select>
+						</p>
+						<p class="form-schedule__wrap">
+							<label class="form-schedule__label">Дата</label>
+							<br>
+							<input class="form-schedule__item" type="date">
+						</p>
+						<p class="form-schedule__wrap">
+							<label class="form-schedule__label">Время</label>
+							<br>
+							<select class="form-schedule__item" placeholder="11:00" type="time">
+								<option value="first">11:00</option>
+								<option value="second">12:00</option>
+								<option value="third">13:00</option>
+								<option value="fourth">14:00</option>
+							</select>
+						</p>
+						<p class="form-schedule__wrap">
+							<label class="form-schedule__label">Стоимость</label>
+							<br>
+							<select class="form-schedule__item" placeholder="Выберите стоимость">
+								<option value="2000">2 000</option>
+								<option value="3000">3 000</option>
+								<option value="4000">4 000</option>
+							</select>
+						</p>
+					</form>
+					<div class="program__btn-wrap"> 
+						<a href="#" class="program__btn btn">Записаться</a>
+					</div>
+				</div>
+				<div class="program__table-container">
+					<table class="program__table table">
+						<thead class="table__thead">
+							<tr class="table__row-title">
+								<th class="table__cell-title">Спорт</th>
+								<th class="table__cell-title">Инструктор</th>
+								<th class="table__cell-title">Дата</th>
+								<th class="table__cell-title">Время</th>
+								<th class="table__cell-title">Стоимость</th>
+								<th class="table__cell-title"></th>
+							</tr>
+						</thead>
+						<tbody class="table__tbody">
+							<tr class="table__row">
+								<td class="table__cell">Сноуборд</td>
+								<td class="table__cell">Константин Константинопольсий</td>
+								<td class="table__cell">30.03.2017</td>
+								<td class="table__cell">12:00</td>
+								<td class="table__cell">2 000 руб.</td>
+								<td class="table__cell"><a href="#form" class="link">Записаться</a></td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">Сноуборд</td>
+								<td class="table__cell">Константин Константинопольсий</td>
+								<td class="table__cell">01.04.2017</td>
+								<td class="table__cell">12:00</td>
+								<td class="table__cell">2 000 руб.</td>
+								<td class="table__cell"><a href="#form" class="link">Записаться</a></td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">Лыжи</td>
+								<td class="table__cell">Степан Александров</td>
+								<td class="table__cell">01.04.2017</td>
+								<td class="table__cell">13:00</td>
+								<td class="table__cell">3 000 руб.</td>
+								<td class="table__cell"><a href="#form" class="link"> Записаться </a></td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">Лыжи</td>
+								<td class="table__cell">Виталий Сергеев</td>
+								<td class="table__cell">03.04.2017</td>
+								<td class="table__cell">14:00</td>
+								<td class="table__cell">4 000 руб.</td>
+								<td class="table__cell"><a href="#form" class="link"> Записаться </a></td>
+							</tr>
+							<tr class="table__row">
+								<td class="table__cell">Сноуборд</td>
+								<td class="table__cell">Арсений Петров</td>
+								<td class="table__cell">04.04.2017</td>
+								<td class="table__cell">14:00</td>
+								<td class="table__cell">4 000 руб.</td>
+								<td class="table__cell"><a href="#form" class="link"> Записаться </a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section class="card">
+			<div class="card__conteiner">
+				<div class="card__avatar-wrap">
+					<div class="card__avatar">
+						<img class="card__avatar-img" src="img/card__avatar.png" alt="Константин">	
+						<span class="card__description">Константин<br> Константинопольский</span>
+					</div>
+				</div>
+				<div class="card__info">
+					<h3 class="card__title">Free ride / продвинутый уровень</h3>
+					<p class="card__text">Дата занятия — 30 марта 2017 года.</p>
+					<h4 class="card__subtitle">Абонемент на разовое посещение (3 часа)</h4>
+					<p class="card__text">Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.</p>
+					<div class="card__price"> 
+						<span>2 000 P</span>
+						<a href="#" class="card__btn btn">Купить</a>
+					</div>	
+					<a href="#" class="card__link">Узнать больше</a>
+				</div>
+			</div>
+		</section>
+		<div class="profile__pagination">
+			<nav class="nav">
+				<ul class="nav__pagination">
+					<li class="pagination__item">
+						<a href="#"><i class="profile__prev"></i></a>
+	  	  	</li>
+					<li class="pagination__item">	
+						<a class="pagination__link pagination__link--current" href="#">1</a>
+					</li>
+					<li class="pagination__item">	
+						<a class="pagination__link" href="#">2</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">3</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">4</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#"><i class="profile__next"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<section id="#form" class="feedback">
+			<div class="feedback__container">
+				<h2 class="feedback__title">Заказать обратный звонок</h2>
+				<form class="feedback__form form" action="#" method="get">
+					<label class="form__label" for="name">*Имя:</label>
+					<input class="form__input" id="name" type="text" name="name" placeholder="Введите ваше имя">
+					<label class="form__label" for="sername">*Фамилия:</label>
+					<input class="form__input" id="sername" type="text" name="sername" placeholder="Введите вашу фамилию">
+					<label class="form__label" for="tel">*Телефон:</label>
+					<input class="form__input" id="tel" type="tel" name="phone" placeholder="+7(666) 666 66 66">
+					<br>
+					<label class="form__label" for="msg">Ваше сообщение</label>
+					<textarea class="form__textarea" id="msg" placeholder="Оставьте свой комментарий по желанию"></textarea>
+					<input class="form__btn btn" id="name" type="submit" name="btn" value="Отправить">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logo">
+				<img src="img/logo__img.png" alt="logo" class="logo">
+			</div>
+			<div class="footer__social social"> 
+				<a href="#"><i class="social__link-ytb"></i></a>
+				<a href="#"><i class="social__link-inst"></i></a>
+				<a href="#"><i class="social__link-fb"></i></a>
+				<a href="#"><i class="social__link-vk"></i></a>
+			</div>
+			<div class="footer__contact contact"> 
+				<a href="tel:+78008008080" class="contact__link">8 (800) 800-80-80</a>
+				<a href="mailto:hello@ice-ace.com" class="contact__mail">Hello@ice-ace.com</a>
+			</div>
+		</div>
+		<div class="footer__container">
+			<div class="footer__copy">
+				<p class="footer__copy">(c)"ICE ACE" - школа сноуборда
+					<br>и горных лыж. Все права защищены</p>
+			</div>
+			<nav class="nav-footer">
+				<ul class="nav-footer__list">
+					<li class="nav-footer__item">	
+						<a href="schedule.html" class="nav-footer__link">Расписание</a>
+					</li>
+					<li class="nav-footer__item">	
+						<a href="instructors.html" class="nav-footer__link">Инструкторы</a>
+					</li>
+					<li class="nav-footer__item">	
+						<a href="schedule.html" class="nav-footer__link">Стоимость</a>
+					</li>
+					<li class="nav-footer__item">	
+						<a href="index.html#map" class="nav-footer__link">Как добраться</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

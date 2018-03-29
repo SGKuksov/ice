@@ -1,0 +1,53 @@
+.community {
+    @media (min-width: $screen-sm) {
+      padding-top: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 0;
+      padding-bottom: 70px;
+    }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+
+    @media (min-width: $screen-lg) {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      color: #000;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-family: PT Sans, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+    @media (min-width: $screen-sm) {
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 700;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 45px;
+      padding: 0 240px;
+      color: #000;
+    }
+  }
+
+  &__map {
+
+    @media (min-width: $screen-sm) {
+      padding: 0 15px;
+    }
+  }
+}

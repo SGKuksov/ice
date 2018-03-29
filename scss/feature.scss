@@ -1,0 +1,188 @@
+.feature {
+  @media (min-width: $screen-sm) {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    width: 290px;
+    margin: 0 auto;
+    @media (min-width: $screen-sm) {
+      width: 740px;
+    }
+    @media (min-width: $screen-lg) {
+      width: 1160px;
+    }
+  }
+
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    @media (min-width: $screen-sm) {
+      margin-left: -14px;
+      margin-right: -14px;
+    }
+    @media (min-width: $screen-lg) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    @media (min-width: $screen-sm) {
+       width: 33%;
+      display: inline-block;
+      text-align: center;
+      margin: auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+
+    @media (min-width: $screen-lg) {
+      font-size: 40px;
+    }
+  }
+
+  &__wrap{
+    width: 75%;
+    padding-left: 15px;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 0px;
+      width: 100%;
+    }
+  }
+  &__subtitle {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 700;
+    margin-top: 0;
+
+    br {
+      display: none;
+      @media (min-width: $screen-sm) {
+        display: block;
+      }
+    }
+
+    @media (min-width: $screen-sm) {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      color: #000;
+    }
+  }
+
+  &__text {
+    font-family: PT Sans, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-sm) {
+      margin-bottom: 0;
+      padding: 15px;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: left;
+      color: #000;
+    }
+  }
+
+  &__item_like {
+    align-self: flex-start;
+    width: 47px;
+    height: 48px;
+    background: url('../img/css_sprites-mob.png') -10px -87px;
+
+    @media (min-width: $screen-sm){
+      display: inline-block;
+      width: 64px;
+      height: 61px;
+      background: url('../img/css_sprites.png') -10px -105px;
+    }
+  }
+
+  &__item_certificate {
+    align-self: flex-start;
+    width: 47px;
+    height: 53px;
+    background: url('../img/css_sprites-mob.png') -142px -10px;
+
+    @media (min-width: $screen-sm) {
+      display: inline-block;
+      width: 57px;
+      height: 61px;
+      background: url('../img/css_sprites.png') -168px -105px;
+    }
+  }
+
+  &__item_calendar {
+    align-self: flex-start;
+    width: 45px;
+    height: 47px;
+    background: url('../img/css_sprites-mob.png') -77px -87px;
+
+    @media (min-width: $screen-sm){
+      display: inline-block;
+      width: 64px;
+      height: 61px;
+      background: url('../img/css_sprites.png') -90px -105px;
+    }
+  }
+
+  &__item_ski {
+    align-self: flex-start;
+     width: 47px;
+     height: 57px;
+     background: url('../img/css_sprites-mob.png') -10px -10px;
+
+    @media (min-width: $screen-sm){
+      display: inline-block;
+      width: 65px;
+      height: 75px;
+      background: url('../img/css_sprites.png') -10px -10px;
+    }
+  }
+
+  &__item_security {
+    align-self: flex-start;
+    width: 45px;
+    height: 57px;
+    background: url('../img/css_sprites-mob.png') -77px -10px;
+    
+    @media (min-width: $screen-sm){
+      display: inline-block;
+      width: 63px;
+      height: 71px;
+      background: url('../img/css_sprites.png') -191px -10px;
+    }
+  }
+
+  &__item_bus {
+    align-self: flex-start;
+    width: 46px;
+    height: 31px;
+    background: url('../img/css_sprites-mob.png') -142px -87px;
+
+    @media (min-width: $screen-sm){
+      display: inline-block;
+      width: 89px;
+      height: 55px;
+      background: url('../img/css_sprites.png') -91px -10px;
+    }
+  }
+}
